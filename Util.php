@@ -6,6 +6,7 @@ class Util{
 
         $_SESSION['login'] = $param['login'];
         $_SESSION['senha'] = $param['senha'];
+        header ("location:main.php");
 
         if($_SESSION['login'] =="julia princesa" && $_SESSION['senha'] == "123"){
             header("Location:main.php");
